@@ -1,0 +1,39 @@
+.price__value {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 24px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 120%;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+}
+
+.price__button {
+  position: relative;
+  margin: 0;
+  border-radius: 16px;
+  border: none;
+  background-color: @blue-color;
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+}
+
+.price__button::before {
+  position:absolute;
+  content: '';
+  width: 92px;
+  height: 111px;
+  left: 0;
+  bottom: 0;
+  background-image: url('/image/price.png');
+  background-repeat: no-repeat;
+  background-size: 92px 111px;
+}
+
+.price__button::after {
+  position:absolute;
+  content: '';
+
+}

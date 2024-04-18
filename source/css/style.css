@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "Suisse-Intl";
+  font-style: regular;
+  font-weight: 400;
+  src: url("../fonts/SuisseIntl-Regular.woff2") format("woff2"), url("../fonts/SuisseIntl-Regular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Suisse-Intl";
+  font-style: medium;
+  font-weight: 500;
+  src: url("../fonts/SuisseIntl-Medium.woff2") format("woff2"), url("../fonts/SuisseIntl-Medium.woff2") format("woff");
+  font-display: swap;
+}
+.page {
+  min-width: 345px;
+  background-color: #ffffff;
+}
+.page *,
+.page *::before,
+.page *::after {
+  box-sizing: border-box;
+}
+.page__body {
+  font-family: "Suisse-Intl", serif;
+  font-weight: 400;
+  color: #1a1a1a;
+  font-size: 12px;
+  line-height: 160%;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 1220px) {
+  .page__body {
+    font-size: 14px;
+  }
+}
+.page__main {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page__main-head {
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+.page__main-galery {
+  order: -1;
+  margin: 0 auto;
+  width: 345px;
+  margin-bottom: 24px;
+}
+.page__main-price {
+  margin: 0 auto;
+  width: 345px;
+  margin-bottom: 24px;
+}
+.head {
+  width: 345px;
+}
+.head-title {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 120%;
+  margin-bottom: 24px;
+}
+.head-button {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.galery__main-photo {
+  margin-bottom: 8px;
+}
+.galery__list {
+  margin: 0;
+  padding: 0;
+}
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 110%;
+}
+.button-heart {
+  border: none;
+  background-color: #ffffff;
+  color: #6c7684;
+  min-width: 108px;
+  min-height: 24px;
+}
+.button-heart-svg {
+  fill: #ffffff;
+}
+.button-heart span {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.price__value {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 24px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 120%;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+}
+.price__button {
+  position: relative;
+  margin: 0;
+  border-radius: 16px;
+  border: none;
+  background-color: #e7f2ff;
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+}
+.price__button::before {
+  position: absolute;
+  content: '';
+  width: 92px;
+  height: 111px;
+  left: 0;
+  bottom: 0;
+  background-image: url('/image/price.png');
+  background-repeat: no-repeat;
+  background-size: 92px 111px;
+}
+.price__button::after {
+  position: absolute;
+  content: '';
+}
+.button-modal {
+  display: grid;
+  grid-template-columns: 92px auto 24px;
+  grid-template-rows: auto auto;
+  column-gap: 16px;
+  row-gap: 4px;
+}
+.button-modal__title {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  font-family: "Suisse-Intl", serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 120%;
+  text-align: left;
+}
+.button-modal span {
+  font-family: "Suisse-Intl", serif;
+  font-weight: 400;
+  color: #1a1a1a;
+  font-size: 12px;
+  line-height: 160%;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  text-align: left;
+}
+/*# sourceMappingURL=style.css.map */
