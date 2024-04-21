@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daichi-test</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page__body">
+  <main class="page__main">
+    <div class="modal-container">
+      <div class="modal modal-cheaper">
+        <img class="modal__logo" src="image/daichi-logo@2x.png" width="218" height="26">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <h2 class="modal__title">
+          Нашли дешевле?<br>
+          <span>Снизим цену!</span>
+        </h2>
+        <p class="modal__description">
+          Если у конкурента цена ниже — вернём разницу!
+          Отправьте ссылку на альтернативное предложение и получите товар по привлекательной цене.
+        </p>
+        <form class="modal__form">
+          <label class="modal__form-label" for="nickname">
+            Ваше имя:<span>*</span>
+          </label>
+          <input class="modal__form-field" type="text" name="nickname" id="nickname" required>
+          <label class="modal__form-label" for="tel">
+            Телефон:<span>*</span>
+          </label>
+          <input class="modal__form-field" type="tel" name="tel" id="tel" placeholder="+7 (000) 000-00-00"
+            pattern="[0-9]{1}-[0-9]{3} [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+          <button class="modal__form-button">
+            Отправить
+          </button>
+          <p class="modal__note">
+            Нажимая на кнопку, вы соглашаетесь с нашей <a href="#" class="modal__note-link">политикой конфиденциальности</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+
+
+  <script src="./js/app.js"></script>
+</body>
+</html>

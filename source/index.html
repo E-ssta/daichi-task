@@ -181,10 +181,15 @@
         Отправьте ссылку на альтернативное предложение и получите товар по привлекательной цене.
       </p>
       <form class="modal__form">
-        <label class="modal__form-label" for="tel">Телефон:<span>*</span></label>
-          <input class="modal__form-field" type="tel" name="tel" id="tel" placeholder="+7 (000) 000-00-00"
+        <label class="modal__form-label" for="nickname">
+          Ваше имя:<span>*</span>
+        </label>
+        <input class="modal__form-field" type="text" name="nickname" id="nickname" required>
+        <label class="modal__form-label" for="tel">
+          Телефон:<span>*</span>
+        </label>
+        <input class="modal__form-field" type="tel" name="tel" id="tel" placeholder="+7 (000) 000-00-00"
           pattern="[0-9]{1}-[0-9]{3} [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
-
         <button class="modal__form-button">
           Отправить
         </button>

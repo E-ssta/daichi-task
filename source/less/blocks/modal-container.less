@@ -24,8 +24,8 @@
 
 .modal-cheaper {
   position: relative;
-  width: 320px;
-  background: url("/image/price-modal-mobile.png"), linear-gradient(to bottom, @blue-color 171px, @white-base 171px);
+  width: 375px;
+  background: url("../image/price-modal-mobile.png"), linear-gradient(to bottom, @blue-color 171px, @white-base 171px);
   background-repeat: no-repeat;
   background-position: 50% 3px, 100% 100%;
   box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.15);
@@ -33,7 +33,7 @@
 
   @media (min-width: @tablet-width) {
     width: 690px;
-    background: url("/image/price-modal-tablet.png"), linear-gradient(to bottom, @blue-color 255px, @white-base 255px);
+    background: url("../image/price-modal-tablet.png"), linear-gradient(to bottom, @blue-color 255px, @white-base 255px);
     background-repeat: no-repeat;
     background-position: 75% 0, 100% 100%;
   }
@@ -113,7 +113,14 @@
 .modal__description {
   margin: 0;
   padding: 0;
+  width: 90%;
   margin-bottom: 25px;
+  font-size: 14px;
+  line-height: 22.4px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 }
 
 .modal__form {
@@ -143,28 +150,25 @@
   padding: 12px 15px;
   font-size: 14px;
   line-height: 160%;
-  margin-bottom: 25px;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 30px;
-  }
+  margin-bottom: 15px;
 }
 
 .modal__form-button {
   border: none;
   border-radius: 5px;
   background-color: @blue-button;
-  // background-color: #e6e6ef;
   color: @white-base;
   padding: 14px 40px 16px;
   font-size: 15px;
   font-weight: 500;
   line-height: 120%;
+  margin-top: 10px;
   margin-bottom: 8px;
   cursor: pointer;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 15px;
+    margin-top: 15px;
   }
 
   &:disabled {
@@ -176,6 +180,10 @@
   margin: 0;
   padding: 0;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 12px;
+  }
 }
 
 .modal__note-link {
