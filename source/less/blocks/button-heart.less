@@ -4,6 +4,20 @@
   color: @grey-font-button;
   min-width: 108px;
   min-height: 24px;
+  cursor: pointer;
+
+  &:hover {
+    color: @usual-font-color;
+  }
+
+  &:active {
+    color: @blue-button;
+
+    & .button-heart-svg {
+      stroke: @blue-button;
+      fill: @blue-button;
+    }
+  }
 }
 
 .button-heart-svg {

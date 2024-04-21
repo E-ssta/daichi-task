@@ -7,6 +7,10 @@
   line-height: 120%;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+
+  @media (min-width: @tablet-width) {
+    padding: 30px;
+  }
 }
 
 .price__button {
@@ -18,6 +22,11 @@
   padding-top: 16px;
   padding-right: 16px;
   padding-bottom: 16px;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 .price__button::before {
@@ -32,8 +41,3 @@
   background-size: 92px 111px;
 }
 
-.price__button::after {
-  position:absolute;
-  content: '';
-
-}

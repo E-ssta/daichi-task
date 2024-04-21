@@ -1,11 +1,21 @@
-// .galery {
-//   display: grid;
-//   grid-template-rows: auto auto;
-//   gap: 8px;
-// }
 
 .galery__main-photo {
+  display: block;
+  margin: 0;
+  padding: 0;
   margin-bottom: 8px;
+
+  @media (min-width: @tablet-width) {
+    width: 380px;
+    height: 380px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 433px;
+    height: 433px;
+    margin-bottom: 24px;
+  }
 }
 
 .galery__list {
